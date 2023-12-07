@@ -22,10 +22,10 @@ window.Pusher = Pusher;
 
 window.Echo = new Echo({
     broadcaster: 'pusher',
-    key: process.env.MIX_PUSHER_APP_KEY,
-    wsHost: process.env.MIX_PUSHER_HOST,
-    wsPort: process.env.MIX_PUSHER_PORT,
-    wssPort: process.env.MIX_PUSHER_PORT,
+    key: import.meta.PUSHER_APP_KEY,
+    wsHost: import.meta.PUSHER_HOST,
+    wsPort: import.meta.PUSHER_PORT,
+    wssPort: import.meta.PUSHER_PORT,
     forceTLS: false,
     encrypted: true,
     disableStats: true,
